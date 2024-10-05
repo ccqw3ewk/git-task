@@ -26,7 +26,6 @@
   var (day2,mes2):=ReadInteger2('Введите day2 и mes2');
   Assert((day1<32) and (day2<32));
   Assert((mes1<13) and (mes2<13));
-  Assert((day1<>day2)and(mes1<>mes2));
   if mes2<mes1 then 
     Print(1);
   if mes1=mes2 then
@@ -39,4 +38,7 @@
   else
     Print(2);
   Println('--------------------------------------------------');
+  var sek:=ReadInteger('Введите количество часов');
+  Print(sek*3600);
+  Println('--------------------------------------------------')
 end.
